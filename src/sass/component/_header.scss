@@ -1,5 +1,17 @@
 @import "../base";
 
 .cr-header {
+    height: 54px;
+    background-color: transparent;
+    position: absolute;
+    padding: 0 54px;
+    display: flex;
+    justify-content: beetwen;
+    align-items: center;
+}
 
+@media (max-width: 768px) {
+    .cr-header {
+        padding: 0 12px;
+    }
 }

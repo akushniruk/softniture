@@ -2,22 +2,19 @@
 
 /* STYLE GUIDE */
 $main-bg: #FFFFFF;
-$cta-color: #A9A9A9;
-$cta-contrast: #747474;
+$cta-color: #88BBE6;
+$cta-hover-color: #67A9DF;
+$cta-contrast: #090909;
 $success: #7CCB03;
 $error: #FF4141;
 $warning: #E84825;
-$text-color: #FFFFFF;
-$cta-text-color: #000000;
+$text-color: #090909;
+$cta-text-color: #ffffff;
 
 /* typography */
 $font-family: Montserrat,
 sans-serif;
 $font-weight: normal;
-$font-size: 14px;
-$font-size-smaller: calc(#{$font-size} * 0.9);
-$font-size-bigger: calc(#{$font-size} * 1.1);
-$line-height: 1.2;
 
 /* MAIN */
 body {
@@ -45,19 +42,20 @@ body {
     div {
         padding: 0;
         margin: 0;
+        font-weight: normal;
+        font-size: 14px;
     }
 
-    h2 {
-        font-size: $font-size-bigger;
+    h1 {
+        font-size: 50px;
         font-weight: bold;
-        line-height: 20px;
-        color: $text-color;
+        word-break: break-word;
+        line-height: 64px;
     }
 
     h3 {
-        font-weight: bold;
-        font-size: calc(#{$font-size} * 1.3);
-        line-height: 22px;
+        font-size: 24px;
+        line-height: 24px;
     }
 
     p {
@@ -75,5 +73,23 @@ body {
     .inactive {
         color: $text-color !important;
         cursor: not-allowed;
+    }
+
+    .cta-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 237px;
+        height: 49px;
+        color: $cta-text-color; 
+        background: $cta-color;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: .2s;
+        font-size: 18px;
+
+        &:hover {
+            background: $cta-hover-color;
+        }
     }
 }
