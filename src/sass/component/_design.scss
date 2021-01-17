@@ -1,0 +1,32 @@
+.cr-design {
+    margin: 150px 0 150px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 54px;
+
+    h4 {
+        margin-top: 12px;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    &-block {
+        margin-bottom: 66px;
+
+        &__row {
+            display: flex;
+
+            &-large {
+                margin-right: 12px;
+                flex: 75%
+            }
+
+            &-small {
+                margin-left: 12px;
+                flex: 25%;
+            }
+        }
+    }
+}
