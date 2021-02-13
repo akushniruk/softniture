@@ -1,5 +1,5 @@
 .cr-design {
-    margin: 150px 0 150px;
+    margin: 150px 0 20px;
     justify-content: center;
     display: flex;
     flex-flow: column;
@@ -12,20 +12,45 @@
         text-align: center;
     }
 
+    &-subtitle {
+        margin-bottom: 66px;
+    }
+
     &-block {
         margin-bottom: 66px;
 
         &__row {
             display: flex;
+            
+            img {
+                height: 403px;
+            }
 
             &-large {
                 margin-right: 12px;
-                flex: 75%
+                flex: 75%;
+                height: 403px;
             }
 
             &-small {
                 margin-left: 12px;
                 flex: 25%;
+                height: 403px;
+            }
+
+            &:nth-child(2) {
+                margin-top: 24px;
+
+                .cr-design-block__row-large {
+                    margin-left: 12px;
+                    margin-right: 0;
+                }
+    
+                .cr-design-block__row-small {
+                    margin-right: 12px;
+                    margin-left: 0;
+                    flex: 25%;
+                }
             }
         }
     }

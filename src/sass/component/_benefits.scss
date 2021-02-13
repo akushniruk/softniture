@@ -17,6 +17,7 @@
             margin-right: 109px;
             display: flex;
             flex-flow: column;
+            align-items: center;
 
             &:last-child {
                 margin-right: 0;
@@ -24,6 +25,7 @@
 
             img {
                 margin-bottom: 24px;
+                width: 105px;
             }
     
             h3 {
