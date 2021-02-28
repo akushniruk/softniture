@@ -21,3 +21,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .cr-grid {
+        height: 75%;
+
+        img {
+            display: none;
+        }
+
+        .cr-main__title {
+            position: absolute;
+            top: 250px;
+            padding: 0 12px;
+            width: auto;
+
+            h3 {
+                margin: 12px 0 48px;
+            }
+        }
+    }
+}

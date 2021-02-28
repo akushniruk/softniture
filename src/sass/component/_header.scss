@@ -12,6 +12,18 @@
 
 @media (max-width: 768px) {
     .cr-header {
-        padding: 0 12px;
+        border-bottom: 1px solid rgba(9,9,9, 0.12);
+        filter: brightness(0.1);
+        padding: 0;
+        width: auto;
+        position: relative;
+
+        img {
+            padding: 0 12px;
+        }
+    }
+
+    .cr-sidebar {
+        display: none;
     }
 }

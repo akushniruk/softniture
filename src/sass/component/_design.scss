@@ -55,3 +55,40 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .cr-design {
+        margin: 0;
+        padding: 0 12px;
+    
+        &-subtitle {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    
+        &-block {
+
+            &__row {
+                flex-flow: column;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+    
+                &-large {
+                    margin-bottom: 12px;
+                    margin-right: 0;
+                }
+    
+                &-small {
+                    margin: 0;
+                }
+    
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

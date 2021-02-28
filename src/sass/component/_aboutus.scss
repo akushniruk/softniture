@@ -11,3 +11,15 @@
         max-width: 900px;
     }
 }
+
+@media (max-width: 768px) {
+    .cr-about-us {
+        margin: 24px 0 0;
+        width: auto;
+        padding: 0 12px;
+
+        p {
+            width: auto;
+        }
+    }
+}
