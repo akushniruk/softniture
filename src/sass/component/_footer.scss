@@ -1,0 +1,119 @@
+.cr-footer {
+    margin-top: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 54px 48px;
+
+    h4 {
+        margin-top: 6px;
+        font-size: 16px;
+    }
+
+    &__contact {
+        margin-top: 48px;
+        display: flex;
+        flex-flow: column;
+
+        &-inputs {
+            display: flex;
+            flex-flow: row;
+
+            &-input {
+                display: flex;
+                flex-flow: column;
+                border-radius: 4px;
+
+                &:first-child {
+                    margin-right: 12px;
+                }
+    
+                input {
+                    width: 299px;
+                    height: 36px;
+                    border-radius: 4px;
+                    border: 1px solid $cta-contrast;
+
+                    &:focus {
+                        border-color: $cta-hover-color;
+                        outline: none;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+
+        textarea {
+            margin-top: 12px;
+            border-radius: 4px;
+            border: 1px solid $cta-contrast;
+
+            &:focus {
+                border-color: $cta-hover-color;
+                outline: none;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    .cta-button {
+        margin-top: 12px;
+        width: 299px;
+    }
+
+    &__info {
+        border-top: 1px solid $cta-contrast;
+        padding-top: 24px;
+        margin-top: 48px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &--group {
+            display: flex;
+
+            h6 {
+                color: rgba(9, 9, 9, 0.48);
+                margin-bottom: 9px;
+            }
+
+            span {
+                margin-bottom: 6px;
+            }
+
+            &-contacts {
+                margin-left: 18px;
+                display: flex;
+                flex-flow: column;
+            }
+    
+            &-address {
+                display: flex;
+                flex-flow: column;
+            }
+    
+            &-socials {
+                margin-left: 18px;
+
+                img {
+                    margin-right: 12px;
+
+                    &:hover {
+                        filter: brightness(0.2);
+                    }
+
+                    &.no-active {
+                        cursor: not-allowed;
+                    }
+                }
+            }
+
+            &__copyright {
+                display: flex;
+                flex-flow: column;
+                font-weight: bold;
+            }
+        }
+    }
+}
